@@ -19,32 +19,20 @@ Portafolio, Documentación técnica y Blog de un futuro
 
 </div>
 
-<!-- Feature Cards -->
-<div class="feature-cards">
+<!-- Feature Cards Simplificado -->
+<div class="grid cards" markdown>
 
-<a href="proyectos/" class="feature-card">
-<div class="icon">
-<img src="assets/icons/server.svg" alt="Proyectos ASIR">
-</div>
-<h3>Proyectos ASIR</h3>
-<p>Documentación paso a paso de despliegues de servicios.</p>
-</a>
+-   **[Proyectos ASIR](proyectos/)**
+    
+    Documentación despliegues y servicios
 
-<a href="documentacion/" class="feature-card">
-<div class="icon">
-<img src="assets/icons/stack.svg" alt="Stack Tecnológico">
-</div>
-<h3>Stack Tecnológico</h3>
-<p>Mis notas sobre Linux, Windows Server, Docker y más.</p>
-</a>
+-   **[Stack Tecnológico](documentacion/)**
 
-<a href="blog/" class="feature-card">
-<div class="icon">
-<img src="assets/icons/wiki.svg" alt="Wiki Personal">
-</div>
-<h3>Wiki Personal</h3>
-<p>Base de conocimiento para resolución de incidencias.</p>
-</a>
+    Notas sobre Linux, Docker y Redes
+
+-   **[Wiki Personal](blog/)**
+
+    Base de conocimiento y tutoriales
 
 </div>
 
