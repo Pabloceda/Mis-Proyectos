@@ -146,7 +146,9 @@ nav:
   - Proyectos: proyectos/index.md
   - Documentación:
     - Inicio: documentacion/index.md
-    - Python: python/index.md
+    - Python: 
+      - Índice: python/index.md
+      - Buscaminas: python/buscaminas.md
     - Desarrollo Web: web/index.md
     - Bases de Datos: bases-datos/index.md
     - Redes: redes/index.md
