@@ -4,26 +4,47 @@ Aquí encontrarás todos mis proyectos desarrollados en Python.
 
 ---
 
-## Lista de Proyectos
+## 📂 Proyectos
 
-### 🎮 BuscaMinas
+<div class="grid cards" markdown>
 
-Implementación completa del clásico juego BuscaMinas en consola.
+-   :fontawesome-solid-gamepad:{ .lg .middle } **BuscaMinas**
 
-**Características:**
-- ✅ Tres niveles de dificultad (Fácil, Medio, Difícil)
-- ✅ Sistema de puntuaciones persistentes en JSON
-- ✅ Colores ANSI para mejor visualización
-- ✅ Protección de primera jugada
-- ✅ Cronómetro en tiempo real
-- ✅ Sistema de pistas y comandos especiales
-- ✅ Algoritmo iterativo optimizado
+    ---
 
-[:octicons-arrow-right-24: Ver documentación completa](buscaminas.md){ .md-button }
+    Implementación completa del clásico juego BuscaMinas en consola con interfaz colorida y sistema de puntuaciones.
+
+    **Tecnologías:** `Python` `JSON` `ANSI Colors`
+
+    ??? info "Características"
+        - ✅ Tres niveles de dificultad
+        - ✅ Puntuaciones persistentes en JSON
+        - ✅ Colores ANSI para visualización
+        - ✅ Protección de primera jugada
+        - ✅ Cronómetro en tiempo real
+        - ✅ Sistema de pistas
+        - ✅ Algoritmo iterativo optimizado
+
+    [:octicons-arrow-right-24: Ver documentación](buscaminas.md)
+
+</div>
 
 ---
 
-### 📊 Otros Proyectos
+## Próximos Proyectos
 
-!!! note "Próximamente"
-    Más proyectos Python serán añadidos aquí.
+<div class="grid cards" markdown>
+
+-   :material-robot:{ .lg } **Automatización**
+    
+    Scripts para automatizar tareas del sistema
+
+-   :material-api:{ .lg } **APIs REST**
+    
+    Desarrollo de APIs con FastAPI/Flask
+
+-   :material-database:{ .lg } **Data Analysis**
+    
+    Análisis de datos con Pandas
+
+</div>

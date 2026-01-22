@@ -1,146 +1,154 @@
 # 👋 Sobre Mí
 
-¡Hola! Soy **Pablo**, estudiante de Administración de Sistemas Informáticos en Red. Aquí encontrarás toda la documentación de mis proyectos.
+<div class="grid cards" markdown>
+
+-   :fontawesome-solid-user:{ .lg .middle } **Pablo**
+
+    ---
+
+    Estudiante de **Administración de Sistemas Informáticos en Red** (ASIR) apasionado por la infraestructura, la seguridad y la automatización.
+
+    :fontawesome-solid-location-dot: España · :fontawesome-solid-graduation-cap: ILERNA · :fontawesome-solid-calendar: 2º Curso
+
+</div>
 
 ---
 
-## 🎓 Formación
+## 🎯 Qué Hago
 
-📚 **Estudiante de Administración de Sistemas Informáticos en Red**
+<div class="grid cards" markdown>
 
-- Segundo curso
-
----
-
-## 💻 Tecnologías
-
-### Lenguajes de Programación
-
-=== "Python"
-    Mi lenguaje principal. Lo uso para:
+-   :fontawesome-solid-server:{ .lg } **Administración de Sistemas**
     
-    - Desarrollo de scripts
-    - Automatización
-    - Proyectos académicos
+    Gestión de servidores Linux/Windows, configuración de servicios y alta disponibilidad.
 
-=== "Web"
-    Stack de desarrollo web:
+-   :fontawesome-solid-network-wired:{ .lg } **Redes**
     
-    - **Frontend:** HTML5, CSS3, JavaScript
-    - **Backend:** PHP
-    - **Bases de Datos:** MySQL, SQLite
+    Diseño y configuración de infraestructuras de red, VLANs, routing y switching.
 
-=== "Otros"
-    Otras tecnologías:
+-   :fontawesome-solid-shield-halved:{ .lg } **Seguridad**
     
-    - Git & GitHub
-    - MkDocs
-    - Configuración de servidores
+    Hardening de sistemas, firewalls, SSL/TLS y políticas de seguridad.
 
-### Nivel de Competencia
+-   :fontawesome-brands-docker:{ .lg } **DevOps**
+    
+    Contenedores, automatización con scripts y CI/CD.
 
-| Tecnología | Nivel | Experiencia |
-|-----------|-------|-------------|
-| Python | ⭐⭐ | 1 año |
-| HTML/CSS | ⭐⭐⭐⭐ | 2 años |
-| JavaScript | ⭐⭐⭐ | 1 año |
-| PHP | ⭐⭐⭐ | 1 año |
-| SQL | ⭐⭐⭐ | 1 año |
+</div>
 
 ---
 
-## 🎯 Intereses
+## 💻 Stack Tecnológico
 
-!!! note "Áreas de Especialización ASIR"
-    - 🖥️ **Administración de Sistemas:** Gestión de servidores Linux/Windows
-    - 🌐 **Redes:** Configuración y optimización de infraestructuras
-    - 🔒 **Seguridad:** Hardening, firewalls y protección de sistemas
-    - 🐳 **Contenedores:** Docker y orquestación con Kubernetes
-    - ☁️ **Cloud Computing:** Infraestructura como código
-    - 🤖 **Automatización:** Scripts y herramientas de DevOps
+=== ":fontawesome-brands-python: Programación"
 
----
+    | Tecnología | Nivel | Uso |
+    |-----------|-------|-----|
+    | Python | ⭐⭐⭐ | Scripts, automatización |
+    | Bash | ⭐⭐⭐ | Shell scripting |
+    | PHP | ⭐⭐ | Backend web |
+    | JavaScript | ⭐⭐ | Frontend |
 
-## 🛠️ Infraestructura y Herramientas
+=== ":fontawesome-brands-linux: Sistemas"
 
-### Sistemas y Servidores
+    | Tecnología | Nivel | Uso |
+    |-----------|-------|-----|
+    | Ubuntu Server | ⭐⭐⭐ | Servidores de producción |
+    | Windows Server | ⭐⭐ | Active Directory |
+    | Docker | ⭐⭐ | Contenedores |
 
-=== "Linux"
-    - Ubuntu Server
-    - Configuración de servicios (Apache, DNS, DHCP)
-    - Gestión de usuarios y permisos
-    - Shell scripting
+=== ":fontawesome-solid-database: Datos"
 
-=== "Redes"
-    - Configuración de routers y switches
-    - VLANs y subnetting
-    - Protocolos TCP/IP
-    - Servicios de red (DNS, DHCP, FTP)
-
-=== "Seguridad"
-    - Firewalls y políticas de seguridad
-    - SSL/TLS y certificados
-    - Backup y recuperación
-    - Alta disponibilidad
+    | Tecnología | Nivel | Uso |
+    |-----------|-------|-----|
+    | MySQL | ⭐⭐⭐ | Bases de datos |
+    | SQLite | ⭐⭐ | Proyectos locales |
 
 ---
 
-## 📊 Estadísticas
+## 🎓 Formación y Cursos
 
-```mermaid
-pie title "Proyectos por Categoría"
-    "Python" : 45
-    "Web" : 30
-    "Bases de Datos" : 15
-    "Redes" : 10
-```
+<div class="grid cards" markdown>
+
+-   :fontawesome-solid-graduation-cap:{ .lg } **ASIR - 2º Curso**
+    
+    ---
+    
+    Administración de Sistemas Informáticos en Red
+    
+    :fontawesome-solid-building: ILERNA
+    
+    **Estado:** En curso
+
+-   :fontawesome-solid-check-circle:{ .lg } **Completados**
+    
+    ---
+    
+    - ✅ Material for MkDocs
+    - ✅ Python Básico
+    - ✅ HTML/CSS
+
+-   :fontawesome-solid-clock:{ .lg } **En Progreso**
+    
+    ---
+    
+    - 🔄 Docker & Kubernetes
+    - 🔄 Redes avanzadas
+    - 🔄 Seguridad informática
+
+</div>
 
 ---
 
-## 🌟 Proyectos Destacados
+## 🏆 Certificaciones
 
-### 🥇 BuscaMinas
+### 📋 Objetivos 2026
 
-Juego completo con múltiples niveles, sistema de puntuaciones y colores.
+<div class="grid cards" markdown>
 
-[Ver proyecto →](python/buscaminas.md){ .md-button }
+-   :material-shield-check:{ .lg } **CompTIA Security+**
+    
+    ---
+    
+    Fundamentos de ciberseguridad
+    
+    **Fecha objetivo:** Q2 2026
+
+-   :fontawesome-solid-network-wired:{ .lg } **Cisco CCNA**
+    
+    ---
+    
+    Certificación de redes
+    
+    **Fecha objetivo:** Q3 2026
+
+-   :fontawesome-brands-aws:{ .lg } **AWS Cloud Practitioner**
+    
+    ---
+    
+    Cloud computing
+    
+    **Fecha objetivo:** Q4 2026
+
+</div>
 
 ---
 
 ## 📫 Contacto
 
-!!! tip "¿Quieres contactarme?"
-    - :fontawesome-brands-github: [GitHub: @pabloceda](https://github.com/pabloceda)
-    - :fontawesome-solid-envelope: Email: proximamente
+<div class="grid cards" markdown>
 
----
+-   :fontawesome-brands-github:{ .lg } **GitHub**
+    
+    [@pabloceda](https://github.com/pabloceda)
 
-## � Objetivos 2026
+-   :fontawesome-brands-linkedin:{ .lg } **LinkedIn**
+    
+    [/in/pabloceda](https://linkedin.com/in/pabloceda)
 
-### 📚 Certificaciones Profesionales
-
-- [ ] **🔒 CompTIA Security+** - Fundamentos de ciberseguridad
-- [ ] **🔐 CompTIA CySA+** - Analista de ciberseguridad
-- [ ] **🌐 Cisco CCNA** - Certificación de redes Cisco
-- [ ] **☁️ AWS Cloud Practitioner** - Fundamentos de cloud
-
-### 🛠️ Tecnologías a Dominar
-
-- [x] Aprender Material for MkDocs
-- [ ] **🐳 Docker** - Contenedores y deployment
-- [ ] **☸️ Kubernetes** - Orquestación de contenedores
-- [ ] **🔧 Ansible** - Automatización de configuraciones
-- [ ] **📊 Prometheus + Grafana** - Monitorización
-- [ ] Desarrollar infraestructura completa de alta disponibilidad
-- [ ] Contribuir a proyecto open source de DevOps
-
----
-
-!!! quote "Filosofía"
-    *"Un buen administrador de sistemas documenta todo lo que hace."*
-
----
-
-<div style="text-align: center; padding: 20px;">
-    <p>✨ Gracias por visitar mi documentación ✨</p>
 </div>
+
+---
+
+!!! quote "Mi Filosofía"
+    *"Un buen administrador de sistemas documenta todo lo que hace."*
