@@ -1,10 +1,10 @@
 site_name: Pablo - SysAdmin Portfolio
-site_url: https://pabloceda.github.io/Mis-Documentaciones/
+site_url: https://pabloceda.github.io/Mis-Proyectos/
 site_description: Portfolio y blog técnico - Especialista en ASIR
 
 # Repository info
-repo_name: Pabloceda/Mis-Documentaciones
-repo_url: https://github.com/Pabloceda/Mis-Documentaciones
+repo_name: Pabloceda/Mis-Proyectos
+repo_url: https://github.com/Pabloceda/Mis-Proyectos
 edit_uri: edit/main/docs/
 
 theme:
