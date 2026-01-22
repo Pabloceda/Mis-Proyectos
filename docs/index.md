@@ -25,7 +25,7 @@ Portafolio, Documentación técnica y Blog de un futuro
 
 <a href="proyectos/" class="feature-card">
 <div class="icon">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="48" height="48" fill="currentColor"><path d="M88.7 223.8L0 375.8V96C0 60.7 28.7 32 64 32H181.5c17 0 33.3 6.7 45.3 18.7l26.5 26.5c12 12 28.3 18.7 45.3 18.7H416c35.3 0 64 28.7 64 64v32H144c-22.8 0-43.8 12.1-55.3 31.8zm27.6 16.1C122.1 230 133.7 224 146.2 224H528c35.3 0 64 28.7 64 64v160c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V395.5L116.3 239.9z"/></svg>
+<img src="assets/icons/server.svg" alt="Proyectos ASIR">
 </div>
 <h3>Proyectos ASIR</h3>
 <p>Documentación paso a paso de despliegues de servicios.</p>
@@ -33,7 +33,7 @@ Portafolio, Documentación técnica y Blog de un futuro
 
 <a href="documentacion/" class="feature-card">
 <div class="icon">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="48" height="48" fill="currentColor"><path d="M64 32C28.7 32 0 60.7 0 96v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm48 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM64 288c-35.3 0-64 28.7-64 64v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V352c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm56 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+<img src="assets/icons/stack.svg" alt="Stack Tecnológico">
 </div>
 <h3>Stack Tecnológico</h3>
 <p>Mis notas sobre Linux, Windows Server, Docker y más.</p>
@@ -41,18 +41,13 @@ Portafolio, Documentación técnica y Blog de un futuro
 
 <a href="blog/" class="feature-card">
 <div class="icon">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="48" height="48" fill="currentColor"><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+<img src="assets/icons/wiki.svg" alt="Wiki Personal">
 </div>
 <h3>Wiki Personal</h3>
 <p>Base de conocimiento para resolución de incidencias.</p>
 </a>
 
 </div>
-
-<!-- Ocultar metadatos de fecha en esta página -->
-<style>
-.md-source-file { display: none !important; }
-</style>
 
 ---
 
