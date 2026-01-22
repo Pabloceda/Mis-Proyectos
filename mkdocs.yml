@@ -9,9 +9,8 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  logo: assets/icons/logo.svg
   favicon: assets/icons/logo.svg
-  icon:
-    logo: assets/icons/logo.svg
   language: es
   
   # Paleta de colores moderna

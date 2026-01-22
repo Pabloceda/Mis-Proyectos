@@ -14,8 +14,8 @@ Portafolio, Documentación técnica y Blog de un futuro
 
 <div class="hero-buttons" markdown>
 
-[📝 Leer el Blog](blog/){ .md-button .md-button--primary }
-[💼 Ver Proyectos](proyectos/){ .md-button .md-button--secondary }
+[📝 Leer el Blog](blog/index.md){ .md-button .md-button--primary }
+[💼 Ver Proyectos](proyectos/index.md){ .md-button .md-button--secondary }
 
 </div>
 
@@ -24,15 +24,15 @@ Portafolio, Documentación técnica y Blog de un futuro
 <!-- Feature Cards Simplificado -->
 <div class="grid cards" markdown>
 
--   **[Proyectos ASIR](proyectos/)**
+-   **[Proyectos ASIR](proyectos/index.md)**
     
     Documentación despliegues y servicios
 
--   **[Stack Tecnológico](documentacion/)**
+-   **[Stack Tecnológico](documentacion/index.md)**
 
     Notas sobre Linux, Docker y Redes
 
--   **[Wiki Personal](blog/)**
+-   **[Wiki Personal](blog/index.md)**
 
     Base de conocimiento y tutoriales
 
