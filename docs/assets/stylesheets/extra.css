@@ -106,11 +106,7 @@
     display: none;
 }
 
-/* Ocultar metadatos de fecha SOLO en la página de inicio (páginas con footer oculto) */
-body:has(.md-typeset--hide-footer) .md-source-file,
-body:has(.md-footer:empty) .md-source-file {
-    display: none !important;
-}
+
 
 .hero-section {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
