@@ -143,10 +143,9 @@ nav:
   - Inicio: index.md
   - Blog:
     - blog/index.md
-  - Proyectos:
-    - proyectos/index.md
-    - BuscaMinas: python/buscaminas.md
+  - Proyectos: proyectos/index.md
   - Documentación:
+    - Inicio: documentacion/index.md
     - Python: python/index.md
     - Desarrollo Web: web/index.md
     - Bases de Datos: bases-datos/index.md
