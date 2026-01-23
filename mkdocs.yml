@@ -79,8 +79,7 @@ plugins:
       pagination: true
       pagination_per_page: 10
   
-  - tags:
-      tags_file: tags.md
+  - tags
   
 
   
@@ -155,7 +154,6 @@ nav:
     - Seguridad: seguridad/index.md
     - Cursos: cursos/index.md
     - Certificaciones: certificaciones/index.md
-    - Plantilla Proyecto: templates/plantilla-proyecto.md
   - Sobre Mí: sobre-mi.md
 
 # Extra

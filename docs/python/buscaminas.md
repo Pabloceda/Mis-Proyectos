@@ -1,77 +1,67 @@
-# 📚 PLAN DE ESTUDIO - BUSCAMINAS EN PYTHON
+# :material-school: Plan de Estudio - Buscaminas en Python
 
-## 🎯 Objetivo del Documento
-Este documento explica detalladamente el código del juego **BuscaMinas** desarrollado en Python para consola. Está diseñado para entender cada parte del código y poder explicarla a un tutor.
-
----
-
-## 📋 ÍNDICE
-1. [Descripción General](#descripción-general)
-2. [Estructura del Programa](#estructura-del-programa)
-3. [Importación de Librerías](#parte-0-importación-de-librerías)
-4. [Configuración y Colores](#parte-1-configuración-del-juego-y-colores)
-5. [Funciones del Tablero](#funciones-del-tablero)
-6. [Funciones Auxiliares](#funciones-auxiliares)
-7. [Flujo Principal del Juego](#flujo-principal-del-juego)
-8. [Conceptos Clave](#conceptos-clave-para-estudiar)
+!!! abstract "Objetivo del Documento"
+    Este documento explica detalladamente el código del juego **BuscaMinas** desarrollado en Python para consola. Está diseñado para entender cada parte del código y poder explicarla a un tutor.
 
 ---
 
-## 🎮 Descripción General
+## :material-gamepad-variant: Descripción General
 
-El **BuscaMinas** es un juego de lógica donde el jugador debe descubrir todas las celdas del tablero que **no contienen minas**. El juego termina cuando:
-- **GANAS**: Descubres todas las celdas seguras (sin minas)
-- **PIERDES**: Descubres una celda con mina
+El **BuscaMinas** es un juego de lógica donde el jugador debe descubrir todas las celdas del tablero que **no contienen minas**.
 
-### Características implementadas:
+!!! success "Condiciones de Victoria / Derrota"
+    *   **GANAS**: Descubres todas las celdas seguras (sin minas).
+    *   **PIERDES**: Descubres una celda con mina.
+
+### Características implementadas
+
 | Característica | Descripción |
-|----------------|-------------|
-| 🎨 Colores ANSI | Mejora visual en consola |
-| ⏱️ Cronómetro | Mide el tiempo de juego |
-| 🏆 Puntuaciones | Guarda los mejores tiempos |
-| 🛡️ Primera jugada protegida | Nunca pisas mina en la primera jugada |
-| 💡 Sistema de pistas | Revela celdas seguras |
-| 📊 3 niveles de dificultad | Fácil, Medio, Difícil |
+| :--- | :--- |
+| :material-palette: **Colores ANSI** | Mejora visual en consola para una experiencia moderna. |
+| :material-timer: **Cronómetro** | Mide el tiempo de juego en tiempo real. |
+| :material-trophy: **Puntuaciones** | Guarda los mejores tiempos en un archivo JSON. |
+| :material-shield-check: **Seguridad** | "Primera jugada protegida": nunca pisas mina al empezar. |
+| :material-lightbulb: **Pistas** | Sistema de ayuda que revela celdas seguras. |
+| :material-chart-bar: **Dificultad** | 3 niveles ajustables (Fácil, Medio, Difícil). |
 
 ---
 
-## 📁 Estructura del Programa
+## :material-file-tree: Estructura del Programa
 
-El código está dividido en **12 partes** bien organizadas:
+El código está dividido en **12 partes** lógicas:
 
-```
-BuscaMinas.py
-│
-├── PARTE 0: Importación de librerías
-├── PARTE 1: Configuración y Colores
-├── PARTE 2: crear_tablero()
-├── PARTE 3: colocar_minas()
-├── PARTE 4: calcular_numeros()
-├── PARTE 5: crear_tablero_visible()
-├── PARTE 6: mostrar_tablero()
-├── PARTE 7: descubrir_celda()
-├── PARTE 8: verificar_victoria()
-├── PARTE 9: mostrar_minas() + Funciones auxiliares
-├── PARTE 10: menu_dificultad()
-├── PARTE 11: jugar() - Función principal
-└── PARTE 12: Punto de entrada (if __name__)
-```
+??? info "Ver estructura detallada"
+    ```
+    BuscaMinas.py
+    │
+    ├── PARTE 0: Importación de librerías
+    ├── PARTE 1: Configuración y Colores
+    ├── PARTE 2: crear_tablero()
+    ├── PARTE 3: colocar_minas()
+    ├── PARTE 4: calcular_numeros()
+    ├── PARTE 5: crear_tablero_visible()
+    ├── PARTE 6: mostrar_tablero()
+    ├── PARTE 7: descubrir_celda()
+    ├── PARTE 8: verificar_victoria()
+    ├── PARTE 9: Funciones auxiliares (pistas, records)
+    ├── PARTE 10: menu_dificultad()
+    ├── PARTE 11: jugar() - Función principal
+    └── PARTE 12: Punto de entrada (main)
+    ```
 
 ---
 
-## 📦 PARTE 0: Importación de Librerías
+## :package: Importación de Librerías
 
-```python
+```python title="PARTE 0: Imports"
 import random    # Para generar posiciones aleatorias de minas
 import time      # Para el cronómetro del juego
 import json      # Para guardar/cargar puntuaciones
 import os        # Para verificar si existe el archivo de puntuaciones
 ```
 
-### ¿Para qué se usa cada una?
-
-| Librería | Uso en el juego |
-|----------|-----------------|
+| Librería | Uso específico |
+| :--- | :--- |
 | `random` | `random.randint()` genera posiciones aleatorias para minas |
 | `time` | `time.time()` obtiene el tiempo actual para calcular duración |
 | `json` | `json.load()` y `json.dump()` para guardar récords en archivo |
@@ -79,18 +69,21 @@ import os        # Para verificar si existe el archivo de puntuaciones
 
 ---
 
-## ⚙️ PARTE 1: Configuración del Juego y Colores
+## :material-cog: Configuración y Colores
 
 ### Variables Globales
-```python
+
+```python title="PARTE 1: Configuración"
 FILAS = 8          # Se modifica según dificultad
 COLUMNAS = 8       # Se modifica según dificultad  
 NUM_MINAS = 10     # Se modifica según dificultad
 ```
 
-> **Importante**: Estas variables son **globales** y se modifican en la función `jugar()` según la dificultad elegida.
+!!! warning "Variables Globales"
+    Estas variables son **globales** y se modifican en la función `jugar()` según la dificultad elegida.
 
 ### Diccionario de Dificultades
+
 ```python
 DIFICULTADES = {
     '1': {'nombre': 'Fácil', 'filas': 6, 'columnas': 6, 'minas': 5},
@@ -99,7 +92,8 @@ DIFICULTADES = {
 }
 ```
 
-### Clase Colores
+### Clase Colores (ANSI)
+
 ```python
 class Colores:
     RESET = '\033[0m'      # Restablece colores
@@ -109,17 +103,18 @@ class Colores:
     # ... más colores
 ```
 
-> **¿Qué son los códigos ANSI?** Son secuencias de escape (`\033[`) que permiten cambiar colores en la terminal. El formato es `\033[CODIGOm`.
+!!! note "¿Qué son los códigos ANSI?"
+    Son secuencias de escape (`\033[`) que permiten cambiar colores en la terminal. El formato es `\033[CODIGOm`.
 
 ---
 
-## 🎲 Funciones del Tablero
+## :material-grid: Funciones del Tablero
 
-### 📍 PARTE 2: `crear_tablero()`
+### :material-table: PARTE 2: `crear_tablero()`
 
 **Propósito**: Crea una matriz vacía que representa el tablero interno (con minas y números).
 
-```python
+```python title="crear_tablero()"
 def crear_tablero():
     tablero = []
     for i in range(FILAS):
@@ -130,30 +125,30 @@ def crear_tablero():
     return tablero
 ```
 
-**Explicación paso a paso**:
-1. Crea una lista vacía `tablero`
-2. Por cada fila, crea una lista vacía `fila`
-3. Por cada columna, añade un `0` a la fila
-4. Añade la fila completa al tablero
-5. Retorna la matriz
+??? example "Explicación paso a paso"
+    1. Crea una lista vacía `tablero`
+    2. Por cada fila, crea una lista vacía `fila`
+    3. Por cada columna, añade un `0` a la fila
+    4. Añade la fila completa al tablero
+    5. Retorna la matriz
 
-**Ejemplo de resultado (6x6)**:
-```
-[[0, 0, 0, 0, 0, 0],
- [0, 0, 0, 0, 0, 0],
- [0, 0, 0, 0, 0, 0],
- [0, 0, 0, 0, 0, 0],
- [0, 0, 0, 0, 0, 0],
- [0, 0, 0, 0, 0, 0]]
-```
+    **Ejemplo de resultado (6x6)**:
+    ```
+    [[0, 0, 0, 0, 0, 0],
+     [0, 0, 0, 0, 0, 0],
+     [0, 0, 0, 0, 0, 0],
+     [0, 0, 0, 0, 0, 0],
+     [0, 0, 0, 0, 0, 0],
+     [0, 0, 0, 0, 0, 0]]
+    ```
 
 ---
 
-### 💣 PARTE 3: `colocar_minas(tablero, num_minas)`
+### :bomb: PARTE 3: `colocar_minas()`
 
 **Propósito**: Coloca las minas en posiciones aleatorias del tablero.
 
-```python
+```python title="colocar_minas()"
 def colocar_minas(tablero, num_minas):
     minas_colocadas = 0
     
@@ -166,20 +161,21 @@ def colocar_minas(tablero, num_minas):
             minas_colocadas += 1
 ```
 
-**Representación de valores**:
-| Valor | Significado |
-|-------|-------------|
-| `-1` | Mina 💣 |
-| `0` | Sin minas adyacentes |
-| `1-8` | Número de minas adyacentes |
+**Representación de valores:**
+
+| Valor | Significado | Icono |
+| :---: | :--- | :---: |
+| `-1` | **Mina** | :bomb: |
+| `0` | Sin minas adyacentes | :white_square_button: |
+| `1-8` | Número de minas adyacentes | :one: - :eight: |
 
 ---
 
-### 🔢 PARTE 4: `calcular_numeros(tablero)`
+### :material-calculator: PARTE 4: `calcular_numeros()`
 
 **Propósito**: Calcula cuántas minas hay alrededor de cada celda.
 
-```python
+```python title="calcular_numeros()"
 def calcular_numeros(tablero):
     for fila in range(FILAS):
         for columna in range(COLUMNAS):
@@ -201,20 +197,20 @@ def calcular_numeros(tablero):
                 tablero[fila][columna] = minas_adyacentes
 ```
 
-**Visualización de las 8 direcciones**:
-```
-  [-1,-1]  [-1, 0]  [-1,+1]
-  [ 0,-1]  [CELDA]  [ 0,+1]
-  [+1,-1]  [+1, 0]  [+1,+1]
-```
+??? tip "Visualización de las 8 direcciones"
+    ```
+      [-1,-1]  [-1, 0]  [-1,+1]
+      [ 0,-1]  [CELDA]  [ 0,+1]
+      [+1,-1]  [+1, 0]  [+1,+1]
+    ```
 
 ---
 
-### 👁️ PARTE 5: `crear_tablero_visible()`
+### :material-eye: PARTE 5: `crear_tablero_visible()`
 
 **Propósito**: Crea el tablero que ve el jugador (todo cubierto con `#`).
 
-```python
+```python title="crear_tablero_visible()"
 def crear_tablero_visible():
     tablero_visible = []
     for i in range(FILAS):
@@ -225,22 +221,22 @@ def crear_tablero_visible():
     return tablero_visible
 ```
 
-**Diferencia entre tableros**:
+**Diferencia entre tableros:**
+
 | Tablero | Contenido | Ejemplo |
-|---------|-----------|---------|
-| `tablero` (interno) | Minas (-1) y números | `[[-1, 1, 0], [1, 1, 0]]` |
-| `tablero_visible` | Lo que ve el jugador | `[['#', '#', '#'], ['#', '#', '#']]` |
+| :--- | :--- | :--- |
+| **`tablero` (interno)** | Minas (-1) y números | `[[-1, 1, 0], [1, 1, 0]]` |
+| **`tablero_visible`** | Lo que ve el jugador | `[['#', '#', '#'], ['#', '#', '#']]` |
 
 ---
 
-### 🖥️ PARTE 6: `mostrar_tablero(tablero_visible)`
+### :material-monitor: PARTE 6: `mostrar_tablero()`
 
 **Propósito**: Imprime el tablero con formato legible y colores.
 
-```python
+```python title="mostrar_tablero()"
 def mostrar_tablero(tablero_visible):
     # Muestra encabezado con números de columna
-    # Usamos 3 espacios para alinear con los números de fila (2 dígitos + 1 espacio)
     print("\n" + Colores.CIAN + "   ", end="")
     for col in range(COLUMNAS):
         print(f"{Colores.BOLD}{col:2d}{Colores.RESET}{Colores.CIAN} ", end="")
@@ -253,30 +249,31 @@ def mostrar_tablero(tablero_visible):
             # Aplica colores según el contenido
             if celda == '#':
                 # Gris para celdas cubiertas
+                pass
             elif celda == '*':
                 # Rojo para minas
-            elif celda in COLORES_NUMEROS:
-                # Color específico para números
-            ...
+                pass
+            # ... más condiciones
 ```
 
-**Ejemplo de salida**:
-```
-    0  1  2  3  4  5
- 0  #  #  #  #  #  #
- 1  #  1  2  #  #  #
- 2  #     1  #  #  #
-```
+??? example "Ejemplo de salida"
+    ```
+        0  1  2  3  4  5
+     0  #  #  #  #  #  #
+     1  #  1  2  #  #  #
+     2  #     1  #  #  #
+    ```
 
 ---
 
-### 🔓 PARTE 7: `descubrir_celda()` - **IMPORTANTE**
+### :material-animation-play: PARTE 7: `descubrir_celda()` - IMPORTANTE
 
 **Propósito**: Descubre una celda y, si tiene 0 minas adyacentes, descubre automáticamente las vecinas.
 
-**Algoritmo usado**: **Flood Fill iterativo** (con pila en lugar de recursión).
+!!! danger "Algoritmo usado: Flood Fill iterativo"
+    Usamos una **pila** en lugar de recursión para evitar errores de *Stack Overflow* en tableros grandes.
 
-```python
+```python title="descubrir_celda()"
 def descubrir_celda(tablero, tablero_visible, fila, columna):
     # Validaciones iniciales
     if fila < 0 or fila >= FILAS or columna < 0 or columna >= COLUMNAS:
@@ -313,15 +310,13 @@ def descubrir_celda(tablero, tablero_visible, fila, columna):
     return True
 ```
 
-> **¿Por qué usar pila en lugar de recursión?** La recursión puede causar errores de "stack overflow" si el tablero es muy grande. La pila es más eficiente.
-
 ---
 
-### 🏆 PARTE 8: `verificar_victoria(tablero_visible)`
+### :trophy: PARTE 8: `verificar_victoria()`
 
 **Propósito**: Comprueba si el jugador ha ganado.
 
-```python
+```python title="verificar_victoria()"
 def verificar_victoria(tablero_visible):
     celdas_cubiertas = 0
     
@@ -334,21 +329,21 @@ def verificar_victoria(tablero_visible):
     return celdas_cubiertas == NUM_MINAS
 ```
 
-**Lógica de victoria**:
-- Total de celdas: `FILAS × COLUMNAS`
-- Celdas con minas: `NUM_MINAS`
-- Celdas seguras: `Total - NUM_MINAS`
-- **Victoria**: Cuando todas las celdas seguras están descubiertas → las únicas cubiertas (`#`) son las minas.
+!!! info "Lógica de victoria"
+    - Total de celdas: `FILAS × COLUMNAS`
+    - Celdas con minas: `NUM_MINAS`
+    - Celdas seguras: `Total - NUM_MINAS`
+    - **Victoria**: Cuando todas las celdas seguras están descubiertas → las únicas cubiertas (`#`) son las minas.
 
 ---
 
-## 🛠️ Funciones Auxiliares
+## :material-wrench: Funciones Auxiliares
 
-### `proteger_primera_jugada(tablero, fila, columna)`
+### `proteger_primera_jugada()`
 
 **Propósito**: Si la primera jugada es una mina, la mueve a otro lugar.
 
-```python
+```python title="proteger_primera_jugada()"
 def proteger_primera_jugada(tablero, fila, columna):
     if tablero[fila][columna] == -1:
         tablero[fila][columna] = 0  # Quita la mina
@@ -372,36 +367,40 @@ def proteger_primera_jugada(tablero, fila, columna):
 
 **Propósito**: Gestión de récords usando JSON.
 
-```python
-def cargar_puntuaciones():
-    if os.path.exists(ARCHIVO_PUNTUACIONES):
-        with open(ARCHIVO_PUNTUACIONES, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    return {}
+=== "Cargar"
+    ```python
+    def cargar_puntuaciones():
+        if os.path.exists(ARCHIVO_PUNTUACIONES):
+            with open(ARCHIVO_PUNTUACIONES, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        return {}
+    ```
 
-def guardar_puntuacion(nombre_dificultad, tiempo):
-    puntuaciones = cargar_puntuaciones()
-    
-    # Redondea el tiempo a 2 decimales para mejor legibilidad
-    tiempo_redondeado = round(tiempo, 2)
-    if nombre_dificultad not in puntuaciones or tiempo_redondeado < puntuaciones[nombre_dificultad]:
-        puntuaciones[nombre_dificultad] = tiempo_redondeado
-        # Usa UTF-8 y ensure_ascii=False para que los acentos se guarden correctamente
-        with open(ARCHIVO_PUNTUACIONES, 'w', encoding='utf-8') as f:
-            json.dump(puntuaciones, f, indent=4, ensure_ascii=False)
-        return True  # Es récord
-    return False
-```
+=== "Guardar"
+    ```python
+    def guardar_puntuacion(nombre_dificultad, tiempo):
+        puntuaciones = cargar_puntuaciones()
+        tiempo_redondeado = round(tiempo, 2)
+        
+        if nombre_dificultad not in puntuaciones or \
+           tiempo_redondeado < puntuaciones[nombre_dificultad]:
+            puntuaciones[nombre_dificultad] = tiempo_redondeado
+            with open(ARCHIVO_PUNTUACIONES, 'w', encoding='utf-8') as f:
+                json.dump(puntuaciones, f, indent=4, ensure_ascii=False)
+            return True  # Es récord
+        return False
+    ```
 
-> **Nota**: Usamos `round(tiempo, 2)` para guardar tiempos legibles (ej: `12.56`) y `ensure_ascii=False` para que `Fácil` no se guarde como `F\u00e1cil`.
+!!! tip "Buenas prácticas"
+    Usamos `round(tiempo, 2)` para guardar tiempos legibles (ej: `12.56`) y `ensure_ascii=False` para que `Fácil` no se guarde como `F\u00e1cil`.
 
 ---
 
-### `obtener_celda_segura(tablero, tablero_visible)`
+### `obtener_celda_segura()`
 
 **Propósito**: Encuentra una celda sin mina que aún no se ha descubierto (para pistas).
 
-```python
+```python title="obtener_celda_segura()"
 def obtener_celda_segura(tablero, tablero_visible):
     celdas_seguras = []
     
@@ -418,13 +417,13 @@ def obtener_celda_segura(tablero, tablero_visible):
 
 ---
 
-## 🎯 Flujo Principal del Juego
+## :material-play-circle: Flujo Principal del Juego
 
 ### PARTE 11: Función `jugar()`
 
 Esta es la función más importante. Controla todo el flujo del juego:
 
-```python
+```python title="jugar()"
 def jugar(filas, columnas, num_minas, nombre_dificultad):
     # 1. Actualiza variables globales
     global FILAS, COLUMNAS, NUM_MINAS
@@ -445,7 +444,6 @@ def jugar(filas, columnas, num_minas, nombre_dificultad):
     # 3. BUCLE PRINCIPAL
     while juego_activo:
         mostrar_tablero(tablero_visible)
-        # Muestra tiempo
         
         entrada = input("Introduce fila o comando: ")
         
@@ -454,8 +452,10 @@ def jugar(filas, columnas, num_minas, nombre_dificultad):
             mostrar_ayuda()
         elif entrada == 'pista':
             # Revela celda segura
+            pass
         elif entrada == 'rendirse':
             # Muestra todas las minas
+            pass
         elif entrada == 'salir':
             return
         
@@ -473,16 +473,18 @@ def jugar(filas, columnas, num_minas, nombre_dificultad):
         
         # 6. VERIFICA RESULTADO
         if not exito:
-            # GAME OVER - Pisó mina
+            print("💥 GAME OVER - Pisaste una mina")
+            juego_activo = False
         elif verificar_victoria(tablero_visible):
-            # VICTORIA
+            print("🎉 ¡FELICIDADES! Has ganado")
+            juego_activo = False
 ```
 
 ---
 
 ### PARTE 12: Punto de Entrada
 
-```python
+```python title="main"
 if __name__ == "__main__":
     configuracion = menu_dificultad()
     jugar(configuracion['filas'], 
@@ -491,50 +493,12 @@ if __name__ == "__main__":
           configuracion['nombre'])
 ```
 
-> **¿Qué significa `if __name__ == "__main__"`?**
-> Este código solo se ejecuta cuando corres el archivo directamente (`python BuscaMinas.py`), no cuando lo importas como módulo.
+!!! question "¿Qué significa `if __name__ == \"__main__\"`?"
+    Este código solo se ejecuta cuando corres el archivo directamente (`python BuscaMinas.py`), no cuando lo importas como módulo.
 
 ---
 
-## 🧠 Conceptos Clave para Estudiar
-
-### 1. **Estructuras de Datos**
-
-| Estructura | Uso |
-|------------|-----|
-| **Lista de listas (Matriz)** | Tablero de juego |
-| **Diccionario** | Configuraciones de dificultad, colores |
-| **Tupla** | Coordenadas (fila, columna) |
-| **Pila (lista como stack)** | Flood Fill iterativo |
-
-### 2. **Conceptos de Programación**
-
-| Concepto | Dónde se usa |
-|----------|--------------|
-| **Variables globales** | `FILAS`, `COLUMNAS`, `NUM_MINAS` |
-| **Bucles anidados** | Recorrer matriz, calcular adyacentes |
-| **Algoritmo Flood Fill** | `descubrir_celda()` |
-| **Manejo de archivos** | Guardar/cargar JSON |
-| **Clases** | `class Colores` |
-| **Manejo de excepciones** | `try/except` en `jugar()` |
-
-### 3. **Algoritmo Flood Fill Explicado**
-
-```
-1. Añade la celda inicial a la pila
-2. Mientras la pila no esté vacía:
-   a. Saca una celda de la pila
-   b. Si ya está descubierta o fuera de límites, continúa
-   c. Si tiene valor 0:
-      - Márcala como descubierta (' ')
-      - Añade las 8 celdas adyacentes a la pila
-   d. Si tiene valor 1-8:
-      - Márcala con ese número (no propaga)
-```
-
----
-
-## 📊 Diagrama de Flujo del Juego
+## :material-chart-bubble: Diagrama de Flujo
 
 ```mermaid
 flowchart TD
@@ -566,33 +530,72 @@ flowchart TD
 
 ---
 
-## 📝 Preguntas Frecuentes para el Tutor
+## :material-book-open-variant: Conceptos Clave para Estudiar
 
-**P: ¿Por qué usas -1 para las minas?**
-> R: Es un valor que no puede ser un número de minas adyacentes (que van de 0 a 8), así que es fácil identificar qué celdas tienen minas.
+### 1. Estructuras de Datos
 
-**P: ¿Por qué hay dos tableros?**
-> R: El `tablero` interno guarda la "verdad" del juego (minas y números). El `tablero_visible` es lo que ve el jugador y va actualizándose según descubre celdas.
+| Estructura | Uso |
+| :--- | :--- |
+| **Lista de listas (Matriz)** | Tablero de juego |
+| **Diccionario** | Configuraciones de dificultad, colores |
+| **Tupla** | Coordenadas (fila, columna) |
+| **Pila (lista como stack)** | Flood Fill iterativo |
 
-**P: ¿Por qué usar pila en lugar de recursión?**
-> R: La recursión tiene un límite de profundidad en Python (~1000 llamadas). En un tablero grande, el Flood Fill podría superar ese límite y causar un error.
+### 2. Conceptos de Programación
 
-**P: ¿Cómo funciona la protección de primera jugada?**
-> R: Si el jugador selecciona una celda con mina en su primer turno, esa mina se mueve a otra posición aleatoria y se recalculan todos los números.
+| Concepto | Dónde se usa |
+| :--- | :--- |
+| **Variables globales** | `FILAS`, `COLUMNAS`, `NUM_MINAS` |
+| **Bucles anidados** | Recorrer matriz, calcular adyacentes |
+| **Algoritmo Flood Fill** | `descubrir_celda()` |
+| **Manejo de archivos** | Guardar/cargar JSON |
+| **Clases** | `class Colores` |
+| **Manejo de excepciones** | `try/except` en `jugar()` |
+
+### 3. Algoritmo Flood Fill Explicado
+
+!!! example "Pasos del algoritmo"
+    1. Añade la celda inicial a la pila
+    2. Mientras la pila no esté vacía:
+        - Saca una celda de la pila
+        - Si ya está descubierta o fuera de límites, continúa
+        - Si tiene valor 0:
+            - Márcala como descubierta (' ')
+            - Añade las 8 celdas adyacentes a la pila
+        - Si tiene valor 1-8:
+            - Márcala con ese número (no propaga)
 
 ---
 
-## ✅ Resumen Final
+## :material-help-circle: Preguntas Frecuentes
+
+??? question "¿Por qué usamos `-1` para las minas?"
+    Porque las celdas normales tienen valores de `0` a `8` (minas adyacentes). Usar `-1` evita confusiones y simplifica las comprobaciones lógicas `if valor == -1`.
+
+??? question "¿Por qué hay dos tableros?"
+    El `tablero` interno guarda la "verdad" del juego (minas y números). El `tablero_visible` es lo que ve el jugador y va actualizándose según descubre celdas.
+
+??? question "¿Por qué usar pila en lugar de recursión?"
+    La recursión tiene un límite de profundidad en Python (~1000 llamadas). En un tablero grande, el Flood Fill podría superar ese límite y causar un error.
+
+??? question "¿Cómo funciona la protección de primera jugada?"
+    Si el jugador selecciona una celda con mina en su primer turno, esa mina se mueve a otra posición aleatoria y se recalculan todos los números.
+
+??? question "¿Qué pasa si borras el archivo JSON?"
+    El programa utiliza `os.path.exists()` para comprobarlo. Si no existe, simplemente crea uno nuevo sin dar error.
+
+---
+
+## :material-check-all: Resumen Final
 
 | Componente | Función Principal |
-|------------|-------------------|
+| :--- | :--- |
 | Tablero interno | Almacena minas y números |
 | Tablero visible | Muestra estado al jugador |
 | Flood Fill | Descubre celdas automáticamente |
-| Sistema de puntuaciones | Guarda mejores tiempos en JSON (2 decimales, UTF-8) |
+| Sistema de puntuaciones | Guarda mejores tiempos en JSON |
 | Colores ANSI | Mejora visual |
 | Comandos especiales | ayuda, pista, rendirse, salir |
-| Alineación tablero | Margen fijo de 3 espacios para todos los niveles |
 
 ---
 
