@@ -1,7 +1,7 @@
-# :material-school: Plan de Estudio - Buscaminas en Python
+# :material-school: Documentación - Buscaminas en Python
 
 !!! abstract "Objetivo del Documento"
-    Este documento explica detalladamente el código del juego **BuscaMinas** desarrollado en Python para consola. Está diseñado para entender cada parte del código y poder explicarla a un tutor.
+    Este documento explica detalladamente el código del juego **BuscaMinas** desarrollado en Python para consola. Está diseñado para entender cada parte del código y poder entender el código.
 
 ---
 
@@ -23,6 +23,11 @@ El **BuscaMinas** es un juego de lógica donde el jugador debe descubrir todas l
 | :material-shield-check: **Seguridad** | "Primera jugada protegida": nunca pisas mina al empezar. |
 | :material-lightbulb: **Pistas** | Sistema de ayuda que revela celdas seguras. |
 | :material-chart-bar: **Dificultad** | 3 niveles ajustables (Fácil, Medio, Difícil). |
+
+<figure markdown="span">
+  ![Menú de selección de dificultad](../assets/images/Menu_Seleccion.png){ width="500" loading="lazy" }
+  <figcaption>Menú de selección de dificultad con 3 niveles</figcaption>
+</figure>
 
 ---
 
@@ -264,6 +269,11 @@ def mostrar_tablero(tablero_visible):
      2  #     1  #  #  #
     ```
 
+<figure markdown="span">
+  ![Tablero del juego en consola](../assets/images/Ejemplo_Tablero.png){ width="450" loading="lazy" }
+  <figcaption>Ejemplo real del tablero con colores ANSI</figcaption>
+</figure>
+
 ---
 
 ### :material-animation-play: PARTE 7: `descubrir_celda()` - IMPORTANTE
@@ -309,6 +319,11 @@ def descubrir_celda(tablero, tablero_visible, fila, columna):
     
     return True
 ```
+
+<figure markdown="span">
+  ![Efecto Flood Fill descubriendo celdas](../assets/images/Ejemplo_FloodFill.png){ width="400" loading="lazy" }
+  <figcaption>Efecto Flood Fill: al descubrir una celda vacía, se expande automáticamente</figcaption>
+</figure>
 
 ---
 
@@ -415,6 +430,11 @@ def obtener_celda_segura(tablero, tablero_visible):
     return None
 ```
 
+<figure markdown="span">
+  ![Sistema de pistas en acción](../assets/images/Ejemplo_Pista.png){ width="450" loading="lazy" }
+  <figcaption>El comando 'pista' revela una celda segura aleatoria</figcaption>
+</figure>
+
 ---
 
 ## :material-play-circle: Flujo Principal del Juego
@@ -479,7 +499,19 @@ def jugar(filas, columnas, num_minas, nombre_dificultad):
             print("🎉 ¡FELICIDADES! Has ganado")
             juego_activo = False
 ```
+<div class="grid" markdown>
 
+<figure markdown="span">
+  ![Comando ayuda](../assets/images/Ejemplo_Ayuda.png){ width="350" loading="lazy" }
+  <figcaption>Comando 'ayuda'</figcaption>
+</figure>
+
+<figure markdown="span">
+  ![Rendirse muestra minas](../assets/images/Ejemplo_Rendirse.png){ width="350" loading="lazy" }
+  <figcaption>Comando 'rendirse'</figcaption>
+</figure>
+
+</div>
 ---
 
 ### PARTE 12: Punto de Entrada
@@ -530,7 +562,7 @@ flowchart TD
 
 ---
 
-## :material-book-open-variant: Conceptos Clave para Estudiar
+## :material-book-open-variant: Conceptos Clave
 
 ### 1. Estructuras de Datos
 
@@ -599,4 +631,4 @@ flowchart TD
 
 ---
 
-*Documento creado para estudio del proyecto BuscaMinas - 2º ASIR*
+*Documentación finalizada - Buscaminas en Python*

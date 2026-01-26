@@ -53,6 +53,7 @@ theme:
     - content.tabs.link
     - content.action.edit
     - announce.dismiss
+    - toc.integrate
 
 # Plugins
 plugins:
@@ -96,6 +97,7 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+      toc_depth: 2
       
   # Admonitions
   - admonition
@@ -152,8 +154,9 @@ nav:
     - Bases de Datos: bases-datos/index.md
     - Redes: redes/index.md
     - Seguridad: seguridad/index.md
-    - Cursos: cursos/index.md
-    - Certificaciones: certificaciones/index.md
+  - Recursos:
+    - recursos/index.md
+    - Plantilla Proyecto: recursos/plantilla-proyecto.md
   - Sobre Mí: sobre-mi.md
 
 # Extra
