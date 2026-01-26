@@ -107,16 +107,19 @@ Documentar instalación para varios sistemas:
 
 ## ¿Cómo empezar?
 
-1. **Descarga la plantilla** desde el enlace de abajo
+1. **Accede a la plantilla** desde el enlace de abajo
 2. **Renombra el archivo** con el nombre de tu proyecto
 3. **Rellena las secciones** eliminando lo que no necesites
-4. **Haz commit y push** para ver tu documentación online
+4. **Haz commit y push** para tener la documentación en tu repositorio con el proyecto mkdocs.
 
 [📥 Descargar Plantilla de Proyecto](../../recursos/plantilla-proyecto.md){ .md-button }
-[:material-download: Descargar código Markdown (.md)](https://raw.githubusercontent.com/Pabloceda/Mis-Proyectos/main/docs/recursos/plantilla-proyecto.md){ .md-button .md-button--primary download="plantilla-proyecto.md" }
+
 
 !!! abstract "Conclusión"
     Una buena documentación es tan importante como el código. Con MkDocs Material y esta plantilla, documentar proyectos se convierte en algo **rápido, visual y profesional**.
+
+!!! info "¿Aún no tienes MkDocs configurado?"
+    Si todavía no has creado tu entorno de documentación, consulta mi tutorial completo: [Creando mi Portfolio con Material for MkDocs](2026-01-16-creando-mi-portfolio.md). Incluye configuración de entorno virtual, `.gitignore` y automatización con GitHub Actions.
 
 ---
 

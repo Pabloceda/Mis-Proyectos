@@ -2,6 +2,8 @@
 
 Esta es una plantilla estándar para documentar nuevos proyectos. Copia este archivo y personalízalo.
 
+[:material-download: Descargar código Markdown (.md)](https://raw.githubusercontent.com/Pabloceda/Mis-Proyectos/main/docs/recursos/plantilla-proyecto.md){ .md-button .md-button--primary download="plantilla-proyecto.md" }
+
 ---
 
 ## 📋 Información del Proyecto
