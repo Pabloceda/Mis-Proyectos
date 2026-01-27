@@ -102,10 +102,11 @@
    HOMEPAGE - HERO SECTION
    ======================================== */
 
+/*
 .md-content__button {
     display: none;
 }
-
+*/
 
 
 .hero-section {
@@ -398,9 +399,9 @@
     /* Líneas divisorias sutiles */
     --md-default-fg-color--lightest: #30363d;
 
-    /* Color Primario: Azul acero profesional */
-    --md-primary-fg-color: #58a6ff;
-    --md-primary-fg-color--light: #79c0ff;
+    /* Colores Primarios Modo Oscuro */
+    --md-primary-fg-color: #673AB7;
+    --md-primary-fg-color--light: #9575CD;
 }
 
 /* Hero Section en Oscuro: Plano y funcional */
