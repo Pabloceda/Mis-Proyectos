@@ -2,10 +2,8 @@
 date: 2026-01-23
 categories:
   - Tutorial
-  - DevOps
 tags:
   - mkdocs
-  - documentación
   - plantillas
 authors:
   - pablo

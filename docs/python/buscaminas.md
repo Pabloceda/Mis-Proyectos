@@ -1,9 +1,6 @@
 ---
 tags:
   - Python
-  - Juegos
-  - Tutorial
-  - Consola
 ---
 
 # :material-school: Documentación - Buscaminas en Python

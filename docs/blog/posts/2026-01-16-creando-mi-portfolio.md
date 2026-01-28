@@ -6,8 +6,6 @@ categories:
   - Tutorial
 tags:
   - MkDocs
-  - Documentación
-  - GitHub Actions
 readtime: 8
 ---
 
