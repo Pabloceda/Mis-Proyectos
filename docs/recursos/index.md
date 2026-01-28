@@ -9,3 +9,11 @@ Plantillas y recursos útiles para documentación de proyectos.
     Plantilla estándar para documentar proyectos técnicos.
 
 </div>
+
+<div class="grid cards" markdown>
+
+-   :material-file-document-outline: **[Etiquetas](tags.md)**
+    
+    Aquí podrás ver todas las etiquetas agrupadas por categoría.
+
+</div>

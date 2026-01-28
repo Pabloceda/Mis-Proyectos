@@ -82,8 +82,6 @@ plugins:
   
   - tags
   
-
-  
   - glightbox
 
 # Extensiones de Markdown
@@ -157,6 +155,7 @@ nav:
   - Recursos:
     - recursos/index.md
     - Plantilla Proyecto: recursos/plantilla-proyecto.md
+    - Etiquetas: recursos/tags.md
   - Sobre Mí: sobre-mi.md
 
 # Extra
