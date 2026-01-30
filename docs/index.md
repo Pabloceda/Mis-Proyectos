@@ -26,15 +26,15 @@ Portafolio, Documentación técnica y Blog de un futuro
 
 -   **[Proyectos ASIR](proyectos/index.md)**
     
-    Documentación despliegues y servicios
+    Echa un vistazo a mis proyectos
 
--   **[Stack Tecnológico](documentacion/index.md)**
+-   **[Stack Tecnológico](blog/index.md)**
 
-    Notas sobre Linux, Docker y Redes
+    Notas sobre tecnologías y tutoriales
 
--   **[Wiki Personal](blog/index.md)**
+-   **[Wiki Personal](documentacion/index.md)**
 
-    Base de conocimiento y tutoriales
+    Mi documentación, puede serte útil
 
 </div>
 
@@ -73,8 +73,8 @@ Portafolio, Documentación técnica y Blog de un futuro
 <div class="contact-buttons" markdown>
 
 [:fontawesome-brands-github: GitHub](https://github.com/pabloceda){ .md-button .md-button--primary }
-[:fontawesome-brands-linkedin: LinkedIn](https://linkedin.com/in/pabloceda){ .md-button }
-[:fontawesome-solid-envelope: Email](mailto:contacto@ejemplo.com){ .md-button }
+[:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/pablo-calderón-de-alba-19259b320){ .md-button }
+[:fontawesome-solid-envelope: Email](mailto:ejemplo@gmail.com){ .md-button }
 
 </div>
 
