@@ -99,43 +99,80 @@
 }
 
 /* ========================================
-   HOMEPAGE - HERO SECTION
+   HOMEPAGE - HERO FULLSCREEN (Estilo Zensical)
    ======================================== */
 
-/*
-.md-content__button {
-    display: none;
+/* Ocultar scroll en homepage */
+body:has(.hero-fullscreen) {
+    overflow: hidden;
+    height: 100vh;
 }
-*/
 
+/* Contenedor principal sin padding */
+.md-main:has(.hero-fullscreen) {
+    padding: 0;
+}
 
-.hero-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    padding: 4rem 2rem;
-    border-radius: 1rem;
+.md-content:has(.hero-fullscreen) {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4rem 6rem;
+    margin: 0;
+    background: transparent;
+    /* Transparente para ver Vanta */
     color: white;
-    text-align: center;
-    margin: 2rem 0;
-    box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+    text-align: left;
+    z-index: 1;
+    /* Por encima del canvas de Vanta */
+    pointer-events: none;
+    /* Permite interacción con Vanta debajo */
 }
 
-.hero-section h1 {
-    font-size: 2.5rem;
+/* Los elementos interactivos sí deben capturar eventos */
+.hero-fullscreen h1,
+.hero-fullscreen p,
+.hero-fullscreen .hero-buttons,
+.hero-fullscreen .md-button {
+    pointer-events: auto;
+}
+
+.hero-fullscreen h1 {
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     color: white !important;
+    z-index: 1;
+    position: relative;
 }
 
-.hero-section p {
-    font-size: 1.2rem;
+.hero-fullscreen p {
+    font-size: 1.3rem;
     opacity: 0.9;
     margin-bottom: 2rem;
+    max-width: 550px;
+    z-index: 1;
+    position: relative;
 }
 
 .hero-buttons {
     display: flex;
     gap: 1rem;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    z-index: 1;
+    position: relative;
 }
 
 .hero-buttons .md-button {
@@ -146,24 +183,28 @@
 }
 
 .hero-buttons .md-button--primary {
-    background-color: white !important;
-    color: #667eea !important;
+    background-color: #ff6b35 !important;
+    /* Naranja/coral */
+    color: white !important;
     border: none;
 }
 
 .hero-buttons .md-button--primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
 }
 
-.hero-buttons .md-button--secondary {
+.hero-buttons .md-button--secondary,
+.hero-buttons .md-button:not(.md-button--primary) {
     background-color: transparent !important;
     color: white !important;
-    border: 2px solid white !important;
+    border: 2px solid rgba(255, 255, 255, 0.5) !important;
 }
 
-.hero-buttons .md-button--secondary:hover {
+.hero-buttons .md-button--secondary:hover,
+.hero-buttons .md-button:not(.md-button--primary):hover {
     transform: translateY(-2px);
+    border-color: white !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 

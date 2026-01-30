@@ -180,4 +180,6 @@ extra_css:
 
 # JavaScript personalizado
 extra_javascript:
+  - https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js
+  - https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js
   - assets/javascripts/extra.js
