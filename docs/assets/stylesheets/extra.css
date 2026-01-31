@@ -108,6 +108,17 @@ body:has(.hero-fullscreen) {
     height: 100vh;
 }
 
+/* Header transparente SOLO en homepage */
+body:has(.hero-fullscreen) .md-header {
+    background: transparent !important;
+    box-shadow: none;
+}
+
+/* Tabs de navegación también transparentes */
+body:has(.hero-fullscreen) .md-tabs {
+    background: transparent !important;
+}
+
 /* Contenedor principal sin padding */
 .md-main:has(.hero-fullscreen) {
     padding: 0;
@@ -127,18 +138,17 @@ body:has(.hero-fullscreen) {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    /* Contenido abajo */
     align-items: flex-start;
-    padding: 4rem 6rem;
+    padding: 6rem 4rem;
+    /* Más espacio inferior */
     margin: 0;
     background: transparent;
-    /* Transparente para ver Vanta */
     color: white;
     text-align: left;
     z-index: 1;
-    /* Por encima del canvas de Vanta */
     pointer-events: none;
-    /* Permite interacción con Vanta debajo */
 }
 
 /* Los elementos interactivos sí deben capturar eventos */
@@ -150,18 +160,18 @@ body:has(.hero-fullscreen) {
 }
 
 .hero-fullscreen h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
     color: white !important;
     z-index: 1;
     position: relative;
 }
 
 .hero-fullscreen p {
-    font-size: 1.3rem;
-    opacity: 0.9;
-    margin-bottom: 2rem;
-    max-width: 550px;
+    font-size: 1rem;
+    opacity: 0.85;
+    margin-bottom: 1.5rem;
+    max-width: 450px;
     z-index: 1;
     position: relative;
 }

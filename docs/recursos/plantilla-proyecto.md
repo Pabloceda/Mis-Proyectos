@@ -188,8 +188,8 @@ def test_ejemplo():
 
 ### Documentación
 
-- [Enlace a documentación oficial](https://ejemplo.com)
-- [Tutorial relevante](https://ejemplo.com)
+- [Enlace a documentación oficial](https://squidfunk.github.io/mkdocs-material/)
+- [Tutorial relevante](https://squidfunk.github.io/mkdocs-material/)
 
 ### Artículos y Tutoriales
 

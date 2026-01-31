@@ -1,9 +1,8 @@
 // Extra JavaScript for enhanced functionality
-console.log("Portfolio loaded successfully!");
+console.log("Pagina cargada correctamente");
 
-// ========================================
 // VANTA.JS - Fondo Animado Homepage (Fullscreen)
-// ========================================
+
 
 function initVanta() {
     const heroFullscreen = document.querySelector('.hero-fullscreen');
@@ -37,9 +36,9 @@ function initVanta() {
             console.error("Vanta.js error:", error);
         }
     } else if (!heroFullscreen) {
-        console.log("Not on homepage, skipping Vanta");
+        console.log("No es la página de Inicio, saltando Vanta");
     } else {
-        console.log("Dependencies not ready, retrying in 300ms...");
+        console.log("Dependencias aun no cargadas, reintentando en 300ms...");
         setTimeout(initVanta, 300);
     }
 }
