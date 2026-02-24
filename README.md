@@ -28,4 +28,12 @@ Componentes Avanzados: Uso de Admonitions, pestañas de código, diagramas Merma
 
 Blog Integrado: Sección de noticias y tutoriales con categorización por etiquetas.
 
+Próximas Mejoras
+
+Mejoras en la Interfaz: Pulir la web, añadir más efectos visuales y animaciones.
+
+Optimización Móvil: Mejorar la experiencia en dispositivos móviles.
+
+Seguridad: Añadir medidas de seguridad adicionales.
+
 
