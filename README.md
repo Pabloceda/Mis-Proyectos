@@ -1,6 +1,6 @@
 👋 ¡Bienvenido!
 
-Hola, soy Pablo Calderón de Alba, estudiante de 2º de ASIR (Administración de Sistemas Informáticos en Red).
+Hola, soy Pablo, estudiante de 2º de ASIR (Administración de Sistemas Informáticos en Red).
 
 Este repositorio aloja el código fuente de mi página web personal y portafolio profesional. Además de documentación técnica y laboratorios de Sistemas. En este proyecto es donde documento mis despliegues, scripts de automatización, prácticas de laboratorio y descubrimientos en el mundo de sistemas y ciberseguridad.
 
