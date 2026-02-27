@@ -72,6 +72,7 @@ plugins:
         - Python
         - Redes
         - Seguridad
+        - Ciberseguridad
         - DevOps
         - Tutorial
       archive: true
