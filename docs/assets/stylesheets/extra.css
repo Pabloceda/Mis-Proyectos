@@ -388,8 +388,12 @@ body:has(.hero-fullscreen) .md-tabs {
 }
 
 /* Modo oscuro: fondo sólido oscuro */
-[data-md-color-scheme="slate"] .md-header {
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
     background-color: #0d1117 !important;
+}
+
+[data-md-color-scheme="slate"] .md-header {
     border-bottom: 1px solid #30363d;
 }
 

@@ -4,12 +4,12 @@ categories:
   - Tutorial
 tags:
   - MkDocs
-  - plantillas
+  - Plantillas
 authors:
   - pablo
 ---
 
-# 📝 Plantilla para Documentar Proyectos con MkDocs Material
+# Plantilla para Documentar Proyectos con MkDocs Material
 
 ¿Cansado de documentar proyectos de forma desordenada? En este post te presento una **plantilla estándar** que uso para todos mis proyectos y te explico por qué **MkDocs Material** es la herramienta perfecta para documentación técnica.
 
