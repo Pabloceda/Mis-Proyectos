@@ -4,15 +4,12 @@ categories:
   - Ciberseguridad
   - Tutorial
 tags:
-  - windows
-  - norton
-  - antivirus
-  - troubleshooting
+  - Publicaciones
 authors:
   - pablo
 ---
 
-# Diario de Guerra: La eliminación definitiva de Norton y el mito de los Antivirus
+# La eliminación de Norton y el mito de los Antivirus
 
 A menudo nos venden los programas antivirus como escudos impenetrables que protegen nuestros sistemas, pero la realidad puede ser muy distinta. Esta es una reflexión crítica sobre cómo, en muchas ocasiones, estos programas terminan comportándose de manera invasiva, casi como el propio malware del que prometen defendernos. Se apropian de los permisos del sistema, consumen recursos de manera desproporcionada y, lo peor de todo, secuestran el control de nuestro propio equipo, volviéndose extremadamente difíciles de desinstalar cuando decidimos prescindir de ellos. 
 
@@ -20,7 +17,7 @@ Estos son los pasos que he tenido que dar para eliminar Norton de mi equipo, un 
 
 <!-- more -->
 
-Aquí tienes el "Diario de Guerra" de la eliminación definitiva de Norton:
+Estos son los pasos que he seguido para la eliminación definitiva de Norton:
 
 ## Fase 1: El Blindaje de "Auto-protección"
 

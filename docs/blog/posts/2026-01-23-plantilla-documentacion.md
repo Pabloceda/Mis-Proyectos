@@ -3,7 +3,7 @@ date: 2026-01-23
 categories:
   - Tutorial
 tags:
-  - mkdocs
+  - MkDocs
   - plantillas
 authors:
   - pablo
