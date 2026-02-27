@@ -4,7 +4,7 @@ Configuración de redes, servidores y servicios de red e Internet.
 
 ---
 
-## 🔧 Proyectos y Configuraciones
+## Proyectos y Configuraciones
 
 !!! tip "Servicios de Red"
     Aquí documentaré configuraciones de Apache, servidores DNS, DHCP y más.
@@ -19,7 +19,7 @@ Configuración de redes, servidores y servicios de red e Internet.
 
 ---
 
-## 📡 Protocolos
+## Protocolos
 
 ```mermaid
 graph TD

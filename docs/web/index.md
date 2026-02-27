@@ -4,7 +4,7 @@ Documentación de proyectos web con HTML, CSS, JavaScript, PHP y frameworks.
 
 ---
 
-## 📋 Lista de Proyectos
+## Lista de Proyectos
 
 !!! note "En construcción"
     Los proyectos web se añadirán próximamente.
@@ -15,14 +15,3 @@ Documentación de proyectos web con HTML, CSS, JavaScript, PHP y frameworks.
 - [ ] Landing page responsive
 - [ ] Aplicación con JavaScript vanilla
 - [ ] Proyecto con framework moderno
-
----
-
-## 🛠️ Tecnologías Utilizadas
-
-| Tecnología | Nivel |
-|-----------|--------|
-| HTML5 | ⭐⭐⭐⭐ |
-| CSS3 | ⭐⭐⭐⭐ |
-| JavaScript | ⭐⭐⭐ |
-| PHP | ⭐⭐⭐ |

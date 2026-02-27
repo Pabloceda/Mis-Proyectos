@@ -1,4 +1,4 @@
-# 👋 Sobre Mí
+# Sobre Mí
 
 <div class="grid cards" markdown>
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 🎯 Qué Hago
+## Qué Hago
 
 <div class="grid cards" markdown>
 
@@ -38,7 +38,7 @@
 
 ---
 
-## 💻 Stack Tecnológico
+## Stack Tecnológico
 
 === ":fontawesome-brands-python: Programación"
 
@@ -100,9 +100,9 @@
 
 ---
 
-## 🏆 Certificaciones
+## Certificaciones
 
-### 📋 Objetivos 2026
+### Objetivos 2026
 
 <div class="grid cards" markdown>
 

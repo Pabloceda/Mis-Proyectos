@@ -1,4 +1,4 @@
-# 📦 Recursos
+# Recursos
 
 Plantillas y recursos útiles para documentación de proyectos.
 

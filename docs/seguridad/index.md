@@ -31,7 +31,7 @@ Documentación de proyectos relacionados con seguridad informática y alta dispo
 
 ---
 
-## 🔐 Herramientas
+## Herramientas útiles
 
 | Herramienta | Propósito |
 |------------|-----------|

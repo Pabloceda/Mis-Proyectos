@@ -1,4 +1,4 @@
-# 📄 Plantilla de Proyecto
+# Plantilla de Proyecto
 
 Esta es una plantilla estándar para documentar nuevos proyectos. Copia este archivo y personalízalo.
 
@@ -6,7 +6,7 @@ Esta es una plantilla estándar para documentar nuevos proyectos. Copia este arc
 
 ---
 
-## 📋 Información del Proyecto
+## Información del Proyecto
 
 | Campo | Valor |
 |-------|-------|
@@ -18,7 +18,7 @@ Esta es una plantilla estándar para documentar nuevos proyectos. Copia este arc
 
 ---
 
-## 🎯 Descripción
+## Descripción
 
 Breve descripción del proyecto (2-3 párrafos).
 
@@ -27,7 +27,7 @@ Breve descripción del proyecto (2-3 párrafos).
 
 ---
 
-## 🎯 Objetivos
+## Objetivos
 
 - [ ] Objetivo 1
 - [ ] Objetivo 2
@@ -73,7 +73,7 @@ pip --version
 
 ---
 
-## 🚀 Uso
+## Uso
 
 ### Ejemplo Básico
 
@@ -113,7 +113,7 @@ proyecto/
 
 ---
 
-## ✨ Características Clave
+## Características Clave
 
 ### Característica 1
 
@@ -145,7 +145,7 @@ flowchart LR
 
 ---
 
-## 🐛 Problemas Resueltos
+## Problemas Resueltos
 
 ### Problema 1
 
@@ -166,7 +166,7 @@ solucion = "código aquí"
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### Tests Unitarios
 
@@ -198,7 +198,7 @@ def test_ejemplo():
 
 ---
 
-## 🔄 Próximas Mejoras
+## Próximas Mejoras
 
 - [ ] Mejora 1
 - [ ] Mejora 2

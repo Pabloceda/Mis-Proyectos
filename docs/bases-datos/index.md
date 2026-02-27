@@ -1,10 +1,10 @@
-# 🗄️ Proyectos de Bases de Datos
+# Proyectos de Bases de Datos
 
 Proyectos relacionados con diseño, implementación y gestión de bases de datos.
 
 ---
 
-## 📊 Proyectos
+## Proyectos
 
 !!! info "Categoría en desarrollo"
     Los proyectos de bases de datos se documentarán aquí.
@@ -20,7 +20,7 @@ Proyectos relacionados con diseño, implementación y gestión de bases de datos
 
 ---
 
-## 📚 Recursos
+## Recursos
 
 - [MySQL Documentation](https://dev.mysql.com/doc/)
 - [SQLite Tutorial](https://www.sqlitetutorial.net/)

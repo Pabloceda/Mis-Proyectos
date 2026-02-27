@@ -1,10 +1,10 @@
-# 💼 Proyectos
+# Proyectos
 
 Aquí encontrarás todos mis proyectos, tanto completados como en desarrollo.
 
 ---
 
-## ✅ Proyectos Completados
+## Proyectos Completados
 
 <div class="grid cards" markdown>
 
@@ -24,7 +24,7 @@ Aquí encontrarás todos mis proyectos, tanto completados como en desarrollo.
 
 ---
 
-## 🚧 Proyectos en Desarrollo
+## Proyectos en Desarrollo
 
 <div class="grid cards" markdown>
 

@@ -1,10 +1,10 @@
-# 🐍 Proyectos Python
+# Proyectos Python
 
 Aquí encontrarás todos mis proyectos desarrollados en Python.
 
 ---
 
-## 📂 Proyectos
+## Proyectos
 
 <div class="grid cards" markdown>
 

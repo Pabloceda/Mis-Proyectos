@@ -61,7 +61,7 @@ El código está dividido en **12 partes** lógicas:
 
 ---
 
-## :package: Importación de Librerías
+## Importación de Librerías
 
 ```python title="PARTE 0: Imports"
 import random    # Para generar posiciones aleatorias de minas

@@ -1,6 +1,6 @@
-# 📝 Blog
+# Blog personal
 
-Bienvenido al blog. Aquí encontrarás artículos técnicos, tutoriales y reflexiones sobre administración de sistemas, redes, seguridad y desarrollo.
+Bienvenido al blog. Aquí encontrarás artículos técnicos, tutoriales y reflexiones sobre el mundo de sistemas, redes, seguridad y desarrollo.
 
 ---
 

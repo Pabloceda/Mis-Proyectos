@@ -1,4 +1,4 @@
-# 📚 Documentación Técnica
+# Documentación Técnica
 
 Bienvenido a mi base de conocimientos personal. Aquí encontrarás guías, apuntes y documentación técnica detallada sobre las tecnologías que utilizo y aprendo día a día.
 

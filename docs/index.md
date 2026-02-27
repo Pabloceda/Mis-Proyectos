@@ -9,8 +9,7 @@ hide:
 
 # Descubre más sobre mí
 
-Portafolio y Documentación técnica de un futuro  
-**Administrador de Sistemas**
+Portafolio y Documentación técnica de un **Administrador de Sistemas**
 
 <div class="hero-buttons" markdown>
 
