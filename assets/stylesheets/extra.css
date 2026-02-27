@@ -1,0 +1,527 @@
+/* ========================================
+   ESTILOS PERSONALIZADOS - PORTFOLIO
+   ======================================== */
+
+/* Variables personalizadas */
+:root {
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --shadow-light: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.15);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ========================================
+   MEJORAS GENERALES
+   ======================================== */
+
+/* Tipografía más fina y limpia */
+.md-typeset {
+    font-weight: 400;
+}
+
+/* Títulos con peso normal */
+.md-typeset h1 {
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.md-typeset h2 {
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.md-typeset h3 {
+    font-weight: 500;
+}
+
+/* Links del blog más finos */
+.md-typeset a {
+    font-weight: 400;
+}
+
+/* ========================================
+   CARDS CON EFECTOS MEJORADOS
+   ======================================== */
+
+/* Cards del grid con hover mejorado */
+.md-typeset .grid.cards>ul>li {
+    transition: var(--transition-smooth);
+    border-radius: 0.75rem;
+}
+
+.md-typeset .grid.cards>ul>li:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Cards como enlaces (clickables) */
+.md-typeset .grid.cards>ul>li a {
+    text-decoration: none;
+}
+
+/* ========================================
+   BOTONES MEJORADOS
+   ======================================== */
+
+/* Botones con animación */
+.md-button {
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+
+.md-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.md-button:active {
+    transform: translateY(0);
+}
+
+/* Efecto ripple en botones */
+.md-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+}
+
+.md-button:hover::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* ========================================
+   HOMEPAGE - HERO FULLSCREEN (Estilo Zensical)
+   ======================================== */
+
+/* Ocultar scroll en homepage */
+body:has(.hero-fullscreen) {
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* Header transparente SOLO en homepage */
+body:has(.hero-fullscreen) .md-header {
+    background: transparent !important;
+    box-shadow: none;
+}
+
+/* Tabs de navegación también transparentes */
+body:has(.hero-fullscreen) .md-tabs {
+    background: transparent !important;
+}
+
+/* Contenedor principal sin padding */
+.md-main:has(.hero-fullscreen) {
+    padding: 0;
+}
+
+.md-content:has(.hero-fullscreen) {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* Contenido abajo */
+    align-items: flex-start;
+    padding: 6rem 4rem;
+    /* Más espacio inferior */
+    margin: 0;
+    background: transparent;
+    color: white;
+    text-align: left;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Los elementos interactivos sí deben capturar eventos */
+.hero-fullscreen h1,
+.hero-fullscreen p,
+.hero-fullscreen .hero-buttons,
+.hero-fullscreen .md-button {
+    pointer-events: auto;
+}
+
+.hero-fullscreen h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+    color: white !important;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-fullscreen p {
+    font-size: 1rem;
+    opacity: 0.85;
+    margin-bottom: 1.5rem;
+    max-width: 450px;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-buttons .md-button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+}
+
+.hero-buttons .md-button--primary {
+    background-color: #ff6b35 !important;
+    /* Naranja/coral */
+    color: white !important;
+    border: none;
+}
+
+.hero-buttons .md-button--primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+}
+
+.hero-buttons .md-button--secondary,
+.hero-buttons .md-button:not(.md-button--primary) {
+    background-color: transparent !important;
+    color: white !important;
+    border: 2px solid rgba(255, 255, 255, 0.5) !important;
+}
+
+.hero-buttons .md-button--secondary:hover,
+.hero-buttons .md-button:not(.md-button--primary):hover {
+    transform: translateY(-2px);
+    border-color: white !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* ========================================
+   HOMEPAGE - CONTACT SECTION
+   ======================================== */
+
+.contact-section {
+    text-align: center;
+    padding: 2.5rem;
+    background: var(--md-default-bg-color);
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin: 2rem 0;
+    border: 1px solid transparent;
+}
+
+.contact-section h2 {
+    margin-top: 0;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.contact-buttons .md-button {
+    min-width: 160px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* ========================================
+   BADGES Y ESTADOS
+   ======================================== */
+
+.badge {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.badge-success {
+    background: #10b981;
+    color: white;
+}
+
+.badge-warning {
+    background: #f59e0b;
+    color: white;
+}
+
+.badge-info {
+    background: #667eea;
+    color: white;
+}
+
+/* ========================================
+   TIMELINE MEJORADO
+   ======================================== */
+
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    background: var(--gradient-primary);
+    border-radius: 3px;
+}
+
+/* ========================================
+   BLOG CARDS
+   ======================================== */
+
+.md-typeset .blog-post-card {
+    border-left: 4px solid;
+    border-image: var(--gradient-primary) 1;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    transition: var(--transition-smooth);
+}
+
+.md-typeset .blog-post-card:hover {
+    padding-left: 2rem;
+    background: rgba(102, 126, 234, 0.05);
+}
+
+/* ========================================
+   FOOTER MEJORADO
+   ======================================== */
+
+.md-footer {
+    margin-top: 3rem;
+}
+
+.md-footer-meta {
+    background: var(--md-default-bg-color--lightest);
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-buttons .md-button {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+/* ========================================
+   ANIMACIONES
+   ======================================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.md-content {
+    animation: fadeInUp 0.4s ease-out;
+}
+
+/* Iconos con animación sutil */
+.md-typeset .grid.cards .twemoji,
+.md-typeset .grid.cards svg {
+    transition: transform 0.3s ease;
+}
+
+.md-typeset .grid.cards>ul>li:hover .twemoji,
+.md-typeset .grid.cards>ul>li:hover svg {
+    transform: scale(1.1);
+}
+
+/* ========================================
+   CABECERA PROFESIONAL
+   ======================================== */
+
+/* Modo claro: usar colores del tema, no forzar blanco */
+[data-md-color-scheme="default"] .md-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Modo oscuro: fondo sólido oscuro */
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+    background-color: #0d1117 !important;
+}
+
+[data-md-color-scheme="slate"] .md-header {
+    border-bottom: 1px solid #30363d;
+}
+
+/* ========================================
+   SCROLLBAR MINIMALISTA
+   ======================================== */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(127, 127, 127, 0.4);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--md-default-fg-color--light);
+}
+
+/* ========================================
+   BLOQUES DE CÓDIGO (Estilo Consola)
+   ======================================== */
+
+.md-typeset pre>code {
+    border-radius: 4px;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 500;
+    border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* ========================================
+   IMÁGENES TÉCNICAS
+   ======================================== */
+
+.md-typeset img {
+    border-radius: 4px;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    box-shadow: none;
+}
+
+/* ========================================
+   MODO OSCURO (SLATE) - ESTILO INGENIERÍA
+   ======================================== */
+
+[data-md-color-scheme="slate"] {
+    /* Fondo: Gris Antracita muy oscuro */
+    --md-default-bg-color: #0d1117;
+
+    /* Texto: Gris claro para alto contraste */
+    --md-default-fg-color: #c9d1d9;
+
+    /* Líneas divisorias sutiles */
+    --md-default-fg-color--lightest: #30363d;
+}
+
+/* Hero Section en Oscuro: Plano y funcional */
+[data-md-color-scheme="slate"] .hero-section {
+    background: linear-gradient(135deg, #21262d 0%, #161b22 100%);
+    border: 1px solid #30363d;
+    box-shadow: none;
+}
+
+/* Tarjetas en Oscuro: Estilo "Panel de Control" */
+[data-md-color-scheme="slate"] .md-typeset .grid.cards>ul>li {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    box-shadow: none;
+}
+
+/* Hover en tarjetas oscuras: Cambio de borde */
+[data-md-color-scheme="slate"] .md-typeset .grid.cards>ul>li:hover {
+    border-color: var(--md-primary-fg-color);
+    background-color: #1c2128;
+    box-shadow: none;
+    transform: translateY(-2px);
+}
+
+
+
+/* Contact section en oscuro */
+[data-md-color-scheme="slate"] .contact-section {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    box-shadow: none;
+}
+
+/* Admonitions en oscuro */
+[data-md-color-scheme="slate"] .md-typeset .admonition {
+    background-color: #161b22;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition-title {
+    background-color: #21262d;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Tabs en oscuro */
+[data-md-color-scheme="slate"] .md-typeset .tabbed-labels>label {
+    border-bottom-color: #30363d;
+}
+
+/* Tablas en oscuro */
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) {
+    border: 1px solid #30363d;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+    background-color: #21262d;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
+    border-color: #30363d;
+}
+
+/* Botones en oscuro */
+[data-md-color-scheme="slate"] .md-button {
+    border-color: #30363d;
+}
+
+[data-md-color-scheme="slate"] .md-button:hover {
+    border-color: var(--md-primary-fg-color);
+    box-shadow: none;
+}

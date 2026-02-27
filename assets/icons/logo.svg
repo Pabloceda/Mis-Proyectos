@@ -1,0 +1,13 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo: Forma de 'Escudo' o Hexágono suavizado para representar infraestructura/seguridad -->
+  <rect x="32" y="32" width="448" height="448" rx="128" fill="#4051b5" stroke="white" stroke-width="32" />
+  
+  <!-- Sombra sutil interna para profundidad -->
+  <path d="M480 160V352C480 422.692 422.692 480 352 480H160C89.3076 480 32 422.692 32 352V160C32 89.3076 89.3076 32 160 32H352C422.692 32 480 89.3076 480 160Z" stroke="white" stroke-opacity="0.1" stroke-width="16"/>
+
+  <!-- Símbolo de Terminal: El prompt '>' -->
+  <path d="M140 150 L260 256 L140 362" stroke="white" stroke-width="50" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Símbolo de Terminal: El cursor '_' -->
+  <path d="M290 362 H380" stroke="#ef5350" stroke-width="50" stroke-linecap="round"/>
+</svg>
