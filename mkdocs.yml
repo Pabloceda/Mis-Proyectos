@@ -17,7 +17,7 @@ theme:
   palette: 
     # Modo Oscuro
     - scheme: slate
-      primary: deep purple
+      primary: black
       accent: amber
       toggle:
         icon: material/brightness-4

@@ -453,10 +453,6 @@ body:has(.hero-fullscreen) .md-tabs {
 
     /* Líneas divisorias sutiles */
     --md-default-fg-color--lightest: #30363d;
-
-    /* Colores Primarios Modo Oscuro */
-    --md-primary-fg-color: #673AB7;
-    --md-primary-fg-color--light: #9575CD;
 }
 
 /* Hero Section en Oscuro: Plano y funcional */
